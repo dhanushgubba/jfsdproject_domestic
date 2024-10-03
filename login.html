@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Domestic Violence Support App</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="get-help.html">Get Help</a></li>
+                <li><a href="signup.html" class="button">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <h1>Login</h1>
+            <!-- No need to define the action attribute here as we will handle it with JavaScript -->
+            <form id="loginForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role" required>
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                    <option value="counsellor">counsellor</option>
+                </select>
+
+                <a href="forgotpassword.html">Forgot Password?</a>
+                <br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Domestic Violence Support App. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault(); 
+            var role = document.getElementById("role").value;
+
+            if (role === "admin") {
+                window.location.href = "adminhome.html"; 
+            } 
+            else if(role === "counsellor") {
+                window.location.href = "cousellor.html";
+            }
+            else {
+                window.location.href = "home.html"; 
+            }
+        });
+    </script>
+</body>
+</html>

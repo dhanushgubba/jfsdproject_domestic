@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a.button {
+    background-color: #FF5733;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+main {
+    margin-top: 80px;
+    padding: 20px;
+}
+
+.admin-welcome {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.admin-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+}
+
+.option h2 {
+    color: #007BFF;
+}
+
+.option p {
+    margin: 10px 0;
+}
+
+.option a.button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.option a.button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}

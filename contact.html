@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Domestic Violence Support App</title>
+    <link rel="stylesheet" href="css1/contact.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="blog.html">Blog/Articles</a></li>
+                <li><a href="faqs.html">FAQs</a></li>
+                <li><a href="legal.html">Legal Guidance</a></li>
+                <li><a href="issue.html">Report an issue</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login.html" class="button">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>If you need help or have any questions, feel free to reach out to us using the form below or through our contact details.</p>
+            
+            <div class="contact-details">
+                <p><strong>Email:</strong> 2200030302@kluniversity.in</p>
+                <p><strong>Phone:</strong> +91 9100638384</p>
+                <p><strong>Address:</strong> Guntur Vari Thota 3Rd Lane, Guntur</p>
+            </div>
+
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509317!2d144.9554313153166!3d-37.81720997975133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0x5045675218ce6e0!2sVictoria!5e0!3m2!1sen!2sau!4v1635478332995!5m2!1sen!2sau" 
+                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h3>Send Us a Message</h3>
+            <form action="/submit_contact_form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Domestic Violence Support App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
